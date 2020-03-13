@@ -1,0 +1,4 @@
+<select (change)="selectChampion($event.target.value)">
+    <option value="" disabled selected></option>
+    <option *ngFor="let champion of champions" [value]="champion.id">{{champion.name}}</option>
+</select>

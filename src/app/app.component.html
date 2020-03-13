@@ -1,0 +1,15 @@
+<main>
+<h1>Marvel Comparison of Champions</h1>
+<h2>Pick your champions to compare:</h2>
+
+<div class="container">
+<div class="col">
+    <mcoc-search (onSelect)="onSelectChampion(0, $event)"></mcoc-search>
+</div>
+<div class="col">
+    <mcoc-search (onSelect)="onSelectChampion(1, $event)"></mcoc-search>
+</div>
+
+</div>
+<router-outlet></router-outlet>
+</main>
